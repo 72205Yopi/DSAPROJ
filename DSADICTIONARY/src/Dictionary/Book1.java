@@ -35,7 +35,16 @@ public class Book1 {
         EngToIlo.put("accustom","ipacadawyan, mairuam, iruam");//28
         EngToIlo.put("ache","sumakit");//29
         EngToIlo.put("acidity","kinaalsem, alsem");//30
-        EngToIlo.put("penis","arikepkep");//31
+        EngToIlo.put("acknowledge","bigbigen, awaten");//31
+        EngToIlo.put("accompany","caduaan, cuyogen");//32
+        EngToIlo.put("acquaint","ipaammo, ipacaammo, yammo");//33
+        EngToIlo.put("acquire","alaen");//34
+        EngToIlo.put("across","idiay bañgir, ballasiw");//35
+        EngToIlo.put("act","agaramid, gumaraw");//36
+        EngToIlo.put("action","aramad, garaw");//37
+        EngToIlo.put("active","sabibiag, nagreta");//38
+        EngToIlo.put("actress","artista a babai");//39
+        EngToIlo.put("actual","pudno, agpayso");//40
     }
      
 }
