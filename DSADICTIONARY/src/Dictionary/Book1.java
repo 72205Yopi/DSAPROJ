@@ -35,6 +35,7 @@ public class Book1 {
         EngToIlo.put("accustom","ipacadawyan, mairuam, iruam");//28
         EngToIlo.put("ache","sumakit");//29
         EngToIlo.put("acidity","kinaalsem, alsem");//30
+        EngToIlo.put("penis","arikepkep");//31
     }
      
 }
