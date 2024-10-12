@@ -25,6 +25,16 @@ public class Book1 {
         EngToIlo.put("absurd","nacacat-catawa, awan banagna, di rumbeng");//18
         EngToIlo.put("abundance","kinaadu");//19
         EngToIlo.put("abuse","panagsalungasibng");//20
+        EngToIlo.put("accent","talmeg");//21
+        EngToIlo.put("accept","awaten, alen");//22
+        EngToIlo.put("accidentally","saan a ginagara, di pinanggep");//23
+        EngToIlo.put("accomplish","leppasen, aramiden");//24
+        EngToIlo.put("account","ibilang, sungbatan");//25
+        EngToIlo.put("accountant","magtaming iti libro ti compañia, contador");//26
+        EngToIlo.put("accuse","pabasolen");//27 
+        EngToIlo.put("accustom","ipacadawyan, mairuam, iruam");//28
+        EngToIlo.put("ache","sumakit");//29
+        EngToIlo.put("acidity","kinaalsem, alsem");//30
     }
      
 }
