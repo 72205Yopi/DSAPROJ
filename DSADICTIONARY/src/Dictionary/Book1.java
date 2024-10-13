@@ -45,6 +45,17 @@ public class Book1 {
         EngToIlo.put("active","sabibiag, nagreta");//38
         EngToIlo.put("actress","artista a babai");//39
         EngToIlo.put("actual","pudno, agpayso");//40
+        EngToIlo.put("add","inayon, pagtiponen");//41
+        EngToIlo.put("addition","panangnayon");//42
+        EngToIlo.put("address","panagbitla, pagtaengan");//43
+        EngToIlo.put("adequate","umdas, macaanay");//44
+        EngToIlo.put("adjective","adjectivo, sarita a mangted ti caipapanan ti banag");//45
+        EngToIlo.put("adjust","ibagay");//46
+        EngToIlo.put("admiral","panagdayaw");//47
+        EngToIlo.put("admire","dayawen, bigbigen a sidadayaw");//48
+        EngToIlo.put("admission","panagawat, panagpastrec");//49
+        EngToIlo.put("admit","awate, pastreken");//50
+        
     }
      
 }
