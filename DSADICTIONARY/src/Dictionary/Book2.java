@@ -2,7 +2,7 @@ package Dictionary;
 import java.util.HashMap;
 public class Book2 {
 
-    public static void main(String[] args) {
+    public static void loadTagalogToIlocano(HashMap<String, String> dictionary) {
        HashMap<String, String> TagToIlo = new HashMap<>();
          
         //letter A in Tagalog to Ilocano

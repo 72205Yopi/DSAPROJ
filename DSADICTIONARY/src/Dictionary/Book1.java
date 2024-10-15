@@ -2,7 +2,7 @@
 package Dictionary;
 import java.util.HashMap;
 public class Book1 {
-    public static void main(String[] args) {
+    public static void loadEnglishToIlocano(HashMap<String, String> dictionary) {
         HashMap<String, String> EngToIlo = new HashMap<>();
         
         //A - D:25 words
