@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 import Dictionary.Book1;
 import Dictionary.Book2;
-public class DictionaryApp {
+public class Dictionary {
     private static HashMap<String, String> dictionary = new HashMap<>();
 
 
@@ -28,7 +28,7 @@ public class DictionaryApp {
 
             switch (option) {
                 case "1":
-                    lookupWord(scanner);
+                
                     break;
                 case "2":
                     addEntry(scanner);
@@ -318,21 +318,17 @@ dictionary.put("tag:sona","paset");//100
     }
 
     // Look up a word in the dictionary
-    private static void lookupWord(Scanner scanner) {
-        System.out.print("Enter the language (Eng/Tag): ");
-        String language = scanner.nextLine().trim().toLowerCase(); // Trim and convert to lowercase
-        System.out.print("Enter the word to look up: ");
-        String word = scanner.nextLine().trim().toLowerCase(); // Trim and convert to lowercase
-
-        String key = language + ":" + word;  // Form the key
-        
-        
-        if (dictionary.containsKey(key)) {
-            System.out.println("Translation: " + dictionary.get(key));
-        } else {
-            System.out.println("Word not found in the dictionary.");
-        }
+   public static String lookupWord(String word, String language) {
+    String key = language.trim().toLowerCase() + ":" + word.trim().toLowerCase();  // Form the key
+    String keyPrefix = language.trim().toLowerCase() + ":";
+    String foundWords = "";
+    
+    if (dictionary.containsKey(key)) {
+        return "Translation: " + dictionary.get(key);  // Corrected: removed extra closing parenthesis
+    } else {
+        return "Word not found in the dictionary.";  // Corrected: removed extra closing parenthesis
     }
+}
 
     // Add a new entry to the dictionary
     private static void addEntry(Scanner scanner) {
@@ -384,5 +380,9 @@ dictionary.put("tag:sona","paset");//100
         } else {
             System.out.println("Word not found in the dictionary.");
         }
+    }
+
+    public void searchWord(String word) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
