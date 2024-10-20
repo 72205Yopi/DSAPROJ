@@ -3,7 +3,7 @@ package Dictionary;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Dictionary {
+public class DictionaryApp {
     // Dictionary maps for English to Tagalog and Tagalog to English
     private static final Map<String, String> EngToIlo;
     private static final Map<String, String> TagToIlo;
