@@ -2,6 +2,8 @@ package Dictionary;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DictionaryApp {
     // Dictionary maps for English to Tagalog and Tagalog to English
@@ -304,5 +306,35 @@ public class DictionaryApp {
             default:
                 return "Invalid language selected.";
         }
+        
     }
+    
+     public static List<String> getWordsStartingWith(String language, String letter) {
+        List<String> results = new ArrayList<>();
+        letter = letter.toLowerCase();
+
+        switch (language) {
+            case "English":
+                for (String key : EngToIlo.keySet()) {
+                    if (key.startsWith(letter)) {
+                        results.add(key + " - " + EngToIlo.get(key));
+                    }
+                }
+                break;
+
+            case "Tagalog":
+                for (String key : TagToIlo.keySet()) {
+                    if (key.startsWith(letter)) {
+                        results.add(key + " - " + TagToIlo.get(key));
+                    }
+                }
+                break;
+
+            default:
+                return results; // Empty list for invalid language
+        }
+
+        return results;   
+    }
+
 }
