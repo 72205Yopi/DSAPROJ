@@ -136,8 +136,8 @@ public class ui extends javax.swing.JFrame {
                     .addComponent(searchfield, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(356, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(111, Short.MAX_VALUE))
         );
 
         jButton2.setText("A");
@@ -607,15 +607,23 @@ public class ui extends javax.swing.JFrame {
 
     private String lookupWordsByLetter(String letter) {
         StringBuilder resultBuilder = new StringBuilder();
-        
+        StringBuilder resultTag = new StringBuilder();
         // Lookup words in the dictionary for the selected letter
         List<String> words = DictionaryApp.getWordsStartingWith("English", letter); // or "Tagalog"
+        List<String> tagwords = DictionaryApp.getWordsStartingWith("Tagalog", letter); // or "Tagalog"
+       
+        
+        for (String tagword : tagwords) {
+            resultTag.append(tagword).append("\n");
+        }
 
-        for (String word : words) {
+       
+    
+      for (String word : words) {
             resultBuilder.append(word).append("\n");
         }
 
-        return resultBuilder.toString();
+        return resultBuilder.toString() + resultTag.toString();
     }
     /**
      * @param args the command line arguments
